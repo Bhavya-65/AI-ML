@@ -21,6 +21,9 @@ st.write(f"Your age is {age}. ")
 st.write(f"Your favorite language is {choice}.")
 st.write(df)
 
+uploaded_file = st.file_uploader("Choose a CSV file",type="csv")
 
-
+if uploaded_file is not None:
+    df = pd.read_csv(uploaded_file)
+    st.write
     
